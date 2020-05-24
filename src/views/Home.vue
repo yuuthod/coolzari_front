@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h2>주간 인기 자리</h2>
-    <home-review-box :repeat="fakeData"></home-review-box>
+    <home-review-box></home-review-box>
     <div>
       <button><span>리뷰 보기</span></button>
       <button><span>리뷰 쓰기</span></button>
@@ -14,15 +14,6 @@ import HomeReviewBox from '@/components/HomeReviewBox.vue';
 
 export default {
   name: 'Home',
-  data() {
-    return {
-      fakeData: [
-        { seatNo: 'F4', grade: 4, img: 'aladin.jpg' },
-        { seatNo: 'I6', grade: 5, img: 'darkfate.jpg' },
-        { seatNo: '-', grade: 3, img: 'frozen2.jpg' },
-      ],
-    };
-  },
   components: {
     HomeReviewBox,
   },

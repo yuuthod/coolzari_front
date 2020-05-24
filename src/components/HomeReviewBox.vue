@@ -1,23 +1,20 @@
 <template>
   <ul>
     <li
-      v-for="(obj, index) in repeat"
+      v-for="(obj, index) in reviews"
       :key="index"
-      :style="setBackgroundImage(obj.img)"
+      :style="setBackgroundImage(obj.movieImg)"
     >
       <p class="beforeLogin">좌석은 로그인 후 확인하실 수 있습니다.</p>
       <grade :gradeNum="obj.grade"></grade>
       <div class="theaters_info">
-        <span>CGV</span>
-        <span>용산아이파크몰</span>
-        <span>IMAX</span>
+        <span>{{ obj.company }}</span>
+        <span>{{ obj.theater }}</span>
+        <span>{{ obj.screenType }}</span>
       </div>
       <h3>{{ obj.seatNo }}</h3>
-      <p>
-        13번의 알라딘중 단연 최고였습니다. 작은 키 이신 분들에게 제격인 것
-        같아요!
-      </p>
-      <span class="date">2019.5.23</span>
+      <p>{{ obj.comment }}</p>
+      <span class="date">{{ obj.created }}</span>
     </li>
   </ul>
 </template>
@@ -36,6 +33,15 @@ export default {
       return `background-image: url(${require('@/assets/images/poster/' +
         img)})`;
     },
+  },
+  computed: {
+    reviews() {
+      return this.$store.state.review.state;
+    },
+  },
+  created: function() {
+    // 테스트용으로 추후 test framework 설치 후 삭제 or 수정.
+    console.log(this.$store.state.review.state);
   },
 };
 </script>

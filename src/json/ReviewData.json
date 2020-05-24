@@ -1,0 +1,63 @@
+{"data":[
+    {
+      "reviewNo": "001",
+      "grade": 4,
+      "company": "CGV",
+      "theater": "용산아이파크",
+      "screenType": "4DX",
+      "seatNo": "F4",
+      "comment": "13번의 알라딘 중 단연 최고였습니다. 작은 키 이신 분들에게 제격인 것 같아요!",
+      "movie": "알라딘",
+      "movieImg": "aladin.jpg",
+      "created": "2019.05.23"
+    },
+    {
+      "reviewNo": "002",
+      "grade": 5,
+      "company": "MEGABOX",
+      "theater": "코엑스",
+      "screenType": "MX",
+      "seatNo": "I6",
+      "comment": "그레이스 사랑해",
+      "movie": "다크페이트",
+      "movieImg": "darkfate.jpg",
+      "created": "2019.10.30"
+    },
+    {
+      "reviewNo": "003",
+      "grade": 3,
+      "company": "CGV",
+      "theater": "용산아이파크몰",
+      "screenType": "IMAX",
+      "seatNo": "-",
+      "comment": "앗! 아맥 티켓팅 아이돌 티켓딩보다 힘들다! 직전에 취소표 잡았는데 아맥 앞자리 너무 눈 아프네요 ㅠㅠ",
+      "movie": "겨울왕국2",
+      "movieImg": "frozen2.jpg",
+      "created": "2020.01.22"
+    },
+    {
+      "reviewNo": "004",
+      "grade": 2,
+      "company": "LOTTECINEMA",
+      "theater": "-",
+      "screenType": "샤롯데",
+      "seatNo": "H4",
+      "comment": "알라딘 남주만 뺴면 정말 좋겠네요. 재밌게 봤습니다.",
+      "movie": "알라딘",
+      "movieImg": "aladin.jpg",
+      "created": "2020.03.21"
+    },
+    {
+      "reviewNo": "005",
+      "grade": 1,
+      "company": "LOTTECINEMA",
+      "theater": "-",
+      "screenType": "수퍼S",
+      "seatNo": "G2",
+      "comment": "된다면 환불받고 싶습니다. 최악이네요.",
+      "movie": "다크페이트",
+      "movieImg": "darkfate.jpg",
+      "created": "2020.05.02"
+    }
+]
+}
