@@ -5,6 +5,7 @@
       :key="index"
       :style="setBackgroundImage(obj.img)"
     >
+      <p class="beforeLogin">좌석은 로그인 후 확인하실 수 있습니다.</p>
       <grade :gradeNum="obj.grade"></grade>
       <div class="theaters_info">
         <span>CGV</span>
@@ -72,6 +73,10 @@ ul > li > p {
   word-break: keep-all;
   margin: 0 auto;
   font-size: 0.7rem;
+}
+ul > li > p.beforeLogin {
+  font-size: 0.6rem;
+  font-weight: 300;
 }
 ul > li > span {
   font-size: 0.6rem;
