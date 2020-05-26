@@ -84,6 +84,9 @@ export default {
       }
     },
   },
+  created() {
+    this.$store.dispatch('review/FETCH_REVIEW_LIST');
+  },
 };
 </script>
 
