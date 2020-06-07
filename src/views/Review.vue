@@ -20,7 +20,10 @@
         :selectName="'screenType'"
         :optionList="['4DX', 'MX', 'IMAX']"
       ></review-select-box>
-      <button>좌석표 보기</button>
+      <button>
+        좌석표 보기
+        <font-awesome-icon :icon="['far', 'hand-point-up']" />
+      </button>
       <span>좌석선택</span>
       <review-select-box
         :selectName="'seatLine'"
@@ -55,16 +58,15 @@
           </button>
         </div>
       </div>
-      <reviewList v-if="isSearchTab"></reviewList>
-      <div v-else>
-        wirte
-      </div>
+      <review-list v-if="isSearchTab"></review-list>
+      <review-write v-else></review-write>
     </div>
   </div>
 </template>
 <script>
 import ReviewList from '@/components/ReviewList.vue';
 import ReviewSelectBox from '@/components/ReviewSelectBox.vue';
+import ReviewWrite from '@/components/ReviewWrite.vue';
 export default {
   data() {
     return {
@@ -74,6 +76,7 @@ export default {
   components: {
     ReviewList,
     ReviewSelectBox,
+    ReviewWrite,
   },
   methods: {
     tabClickHandler(select) {
@@ -113,19 +116,22 @@ div.reviewList > div.menu > div {
 
 div.selectBoxes {
   text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
 }
+div.selectBoxes > select,
 div.selectBoxes > button,
 div.selectBoxes > span {
-  display: inline-block;
-  position: relative;
-  bottom: 3px;
+  flex: 1 1 auto;
 }
 div.selectBoxes > button {
-  width: 25%;
-  text-align: left;
-  font-size: 0.9rem;
-  padding: 0 6px;
-  background: url('../assets/images/icon/eye.png') right / 1.2rem no-repeat;
+  width: calc(25% - 5px);
+  margin-right: 5px;
+  font-size: 0.8rem;
+  padding: 3px 0px;
+  border: 2px solid #ffca0d;
+  border-radius: 8px;
 }
 div.selectBoxes > span {
   width: 25%;

@@ -9,29 +9,52 @@
       <dl>
         <dt>{{ review.userHeight }}</dt>
         <dd>키(cm)</dd>
-        <dt>{{ review.userRegion }}</dt>
+        <dt>
+          <font-awesome-icon :icon="['far', 'eye']" /> {{ review.userRegion }}
+        </dt>
         <dd>주시야</dd>
-        <dt>{{ review.userPreferseatA }}/{{ review.userPreferseatB }}</dt>
+        <dt>
+          <font-awesome-icon icon="chair" />
+          {{ review.userPreferseatA }}/{{ review.userPreferseatB }}
+        </dt>
         <dd>좌석</dd>
       </dl>
       <p>
         {{ review.comment }}
       </p>
+      <div>
+        <h2>관람한 영화</h2>
+        <span>{{ review.movie }}</span>
+      </div>
+      <h2>키워드 평가</h2>
       <dl>
-        <dt>만족도1</dt>
-        <dd><progress value="20" max="100"></progress></dd>
-        <dt>만족도2</dt>
-        <dd><progress value="20" max="100"></progress></dd>
-        <dt>만족도3</dt>
-        <dd><progress value="20" max="100"></progress></dd>
+        <dt>좌석</dt>
+        <dd>
+          <span v-for="(value, key) in review.keywordSeat" :key="key">{{
+            value
+          }}</span>
+        </dd>
+        <dt>시야</dt>
+        <dd>
+          <span v-for="(value, key) in review.keywordEyesight" :key="key">{{
+            value
+          }}</span>
+        </dd>
+        <dt>효과</dt>
+        <dd>
+          <span v-for="(value, key) in review.keywordEffect" :key="key">{{
+            value
+          }}</span>
+        </dd>
       </dl>
       <ul>
         <li>{{ review.userId }}</li>
         <li>{{ review.date }}</li>
-        <li v-if="isShow">삭제</li>
+        <li v-if="isShow">리뷰신고</li>
       </ul>
       <button @click="detailShowClick()">
-        {{ isShow ? '접기' : '펼치기' }}
+        <span v-if="isShow">접기 <font-awesome-icon icon="caret-up"/></span>
+        <span v-else>펼치기 <font-awesome-icon icon="caret-down"/></span>
       </button>
     </div>
     <div @click="likeClickUp">
@@ -114,11 +137,13 @@ li.item {
 li.item > img {
   width: 30%;
   height: 100%;
+  flex: 1 1 auto;
 }
 li.item > div:nth-of-type(1) {
   margin-left: 10px;
   overflow: hidden;
   height: 70px;
+  flex: 2 1 auto;
 }
 li.item > div:nth-of-type(1) > dl:nth-of-type(1) dt,
 li.item > div:nth-of-type(1) > dl:nth-of-type(1) dd {
@@ -136,6 +161,12 @@ li.item
   margin-right: 5px;
   border-right: 1px solid #aaa;
 }
+
+li.item > div:nth-of-type(1) > dl:nth-of-type(1) dt:not(:first-of-type) > svg {
+  font-size: 0.6rem;
+  vertical-align: baseline;
+}
+
 li.item > div:nth-of-type(1) > dl:nth-of-type(1) dd {
   visibility: hidden;
   background-color: black;
@@ -172,7 +203,7 @@ li.item > div:nth-of-type(1) > button {
   right: 10px;
 }
 li.item > div:nth-of-type(1) p {
-  width: 200px;
+  min-width: 140px;
   padding-top: 15px;
   position: relative;
   line-height: 1.1rem;
@@ -192,13 +223,66 @@ li.item > div:nth-of-type(1) p.ellipsis {
   line-height: 1.2em;
   height: 3.6em;
 }
+li.item > div:nth-of-type(1) > div:nth-of-type(2) {
+  margin-top: 30px;
+}
+li.item > div:nth-of-type(1) > div > h2 {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #777;
+}
+li.item > div:nth-of-type(1) > div > span {
+  display: inline-block;
+  padding-left: 5px;
+}
+li.item > div:nth-of-type(1) > h2 {
+  margin-top: 10px;
+  color: #777;
+}
 li.item > div:nth-of-type(1) dl:nth-of-type(2) {
-  margin: 5px 0 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 0 30px 0;
 }
 li.item > div:nth-of-type(1) dl:nth-of-type(2) > dt {
-  padding-top: 10px;
+  flex: 1 1 auto;
+  width: calc(15% - 10px);
+  margin-right: 10px;
+  padding-top: 3px;
+  white-space: nowrap;
+}
+li.item > div:nth-of-type(1) dl:nth-of-type(2) > dd {
+  flex: 1 1 auto;
+  width: 85%;
+}
+li.item > div:nth-of-type(1) dl:nth-of-type(2) > dd > span {
+  display: inline-block;
+  min-width: calc(33.3% - 5px);
+  margin-top: 0px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding: 5px 5px 3px 5px;
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 2px;
+  background-color: #ffc800;
+}
+li.item > div:nth-of-type(1) dl:nth-of-type(2) > dd:nth-last-of-type(2) > span {
+  background-color: #aaa;
+  color: #fff;
+}
+li.item > div:nth-of-type(1) dl:nth-of-type(2) > * {
+  margin-top: 10px;
+}
+li.item > div:nth-of-type(2) {
+  min-width: 25px;
 }
 li.item > div:nth-of-type(2) > svg {
   padding-right: 4px;
+}
+@media (max-width: 400px) {
+  li.item > div:nth-of-type(1) dl:nth-of-type(2) > dt {
+    width: 100%;
+  }
 }
 </style>

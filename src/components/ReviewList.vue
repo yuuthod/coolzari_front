@@ -29,6 +29,7 @@ export default {
 div {
   background: #eee;
   padding-bottom: 15px;
+  margin-top: -1px;
 }
 li:not(:first-of-type) {
   margin-top: 20px;

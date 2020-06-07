@@ -31,6 +31,9 @@ select {
   padding: 0rem 0.4rem;
   margin-bottom: 10px;
   font-size: 0.6rem;
+  text-align: center;
+  text-align: -webkit-center;
+  text-align-last: center;
   background: url('../assets/images/icon/down_arrow.svg') no-repeat 95% 50%;
   background-size: 10px;
   border: 2px solid #ffca0d;

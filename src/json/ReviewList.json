@@ -3,11 +3,14 @@
           "userId": "user01",
           "grade": 5,
           "img": "darkfate.jpg",
-          "movie": "darkfate",
+          "movie": "터미네이터-다크페이트(2019)",
           "userHeight": 160,
           "userRegion": "오른쪽",
           "userPreferseatA": "좌",
           "userPreferseatB": "상",
+          "keywordSeat": ["푹신푹신해요","또대체","냄새남"],
+          "keywordEyesight": ["조금 더", "그럴듯한", "내용필요"],
+          "keywordEffect": ["향기굿", "구림"],
           "comment":
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ad voluptate distinctio voluptas. Molestiae doloribus esse nobis facilis. Quis repellendus provident commodi, aut quo saepe quae odit suscipit accusamus, ducimus et. Harum voluptate sequi rerum quibusdam facere, placeat impedit ducimus dolorem quo laboriosam nihil possimus qui assumenda quam iusto exercitationem rem ab molestiae deserunt illum. Non temporibus est, aliquam nemo error corporis hic dolorum ab possimus, illum voluptate tempore nihil quis quibusdam veniam cumque! Ducimus ipsa iure ullam consectetur fugit aperiam illo sunt sequi consequatur dicta fuga incidunt, rem quod nostrum animi suscipit illum dolores minus molestias non velit dolorum!",
           "date": "2020.04.25"
@@ -16,11 +19,23 @@
           "userId": "user01",
           "grade": 4,
           "img": "aladin.jpg",
-          "movie": "aladin",
+          "movie": "알라딘(2019)",
           "userHeight": 160,
           "userRegion": "왼쪽",
           "userPreferseatA": "좌",
           "userPreferseatB": "중상",
+          "keywordSeat": [
+            "푹신푹신해요"
+          ],
+          "keywordEyesight": [
+            "조금 더",
+            "그럴듯한",
+            "내용필요"
+          ],
+          "keywordEffect": [
+            "향기굿",
+            "구림"
+          ],
           "comment":
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam est quibusdam voluptatem. Natus, assumenda debitis perspiciatis vero nostrum voluptatum accusantium.",
           "date": "2020.04.25"
@@ -29,11 +44,23 @@
           "userId": "user01",
           "grade": 3,
           "img": "frozen2.jpg",
-          "movie": "frozen2",
+          "movie": "겨울왕국2(2019)",
           "userHeight": 160,
           "userRegion": "왼쪽",
           "userPreferseatA": "우",
           "userPreferseatB": "하",
+          "keywordSeat": [
+            "푹신푹신해요"
+          ],
+          "keywordEyesight": [
+            "조금 더",
+            "그럴듯한",
+            "내용필요"
+          ],
+          "keywordEffect": [
+            "향기굿",
+            "구림"
+          ],
           "comment":
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sapiente deleniti expedita iure assumenda, nam dolorem sunt provident quo unde, officiis et, magni ex fuga voluptas velit ipsum dicta quia.",
           "date": "2020.04.25"
@@ -42,11 +69,23 @@
           "userId": "user01",
           "grade": 3,
           "img": "aladin.jpg",
-          "movie": "aladin",
+          "movie": "알라딘(2019)",
           "userHeight": 160,
           "userRegion": "오른쪽",
           "userPreferseatA": "좌",
           "userPreferseatB": "중상",
+          "keywordSeat": [
+            "푹신푹신해요"
+          ],
+          "keywordEyesight": [
+            "조금 더",
+            "그럴듯한",
+            "내용필요"
+          ],
+          "keywordEffect": [
+            "향기굿",
+            "구림"
+          ],
           "comment":
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam at cum, corrupti molestias iusto excepturi pariatur odit necessitatibus repudiandae similique perspiciatis ullam sapiente, nulla quibusdam non nisi quis eveniet aliquam sequi! Cumque, quidem voluptatem? Enim at esse eius commodi ea quisquam fuga vitae, ipsa neque ad laboriosam saepe, atque deserunt quia quo consequuntur quos non quidem totam laudantium repellat sint reiciendis ipsum numquam! Sed quaerat modi mollitia minima quisquam. Tenetur?",
           "date": "2020.04.25"
