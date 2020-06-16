@@ -17,6 +17,9 @@ export default {
   components: {
     HomeReviewBox,
   },
+  created() {
+    this.$store.dispatch('review/FETCH_REVIEW_LIST');
+  },
 };
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <ul>
     <li
-      v-for="(obj, index) in reviews"
+      v-for="(obj, index) in reviewList"
       :key="index"
       :style="setBackgroundImage(obj.movieImg)"
     >
@@ -20,6 +20,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 import Grade from '@/components/commons/Grade.vue';
 export default {
   props: {
@@ -35,9 +36,9 @@ export default {
     },
   },
   computed: {
-    reviews() {
-      return this.$store.state.review.state;
-    },
+    ...mapGetters('review', {
+      reviewList: 'getReviewList',
+    }),
   },
   created: function() {
     // 테스트용으로 추후 test framework 설치 후 삭제 or 수정.

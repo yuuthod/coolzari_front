@@ -2,7 +2,7 @@
   <div>
     <ul>
       <review-list-item
-        v-for="(obj, key) in reviewList"
+        v-for="(obj, key) in optionList"
         :review="obj"
         :key="key"
       ></review-list-item>
@@ -19,7 +19,7 @@ export default {
   },
   computed: {
     ...mapGetters('review', {
-      reviewList: 'getReviewList',
+      optionList: 'getOptionList',
     }),
   },
 };

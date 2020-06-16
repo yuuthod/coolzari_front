@@ -1,18 +1,24 @@
-import movieDB from '@/json/ReviewData.json';
 import { fetchReviewList } from '@/api/index.js';
+import { fetchOptionList } from '@/api/index.js';
 
 const state = {
-  state: movieDB.data,
+  optionList: [],
   reviewList: [],
 };
 
 const getters = {
+  getOptionList(state) {
+    return state.optionList;
+  },
   getReviewList(state) {
     return state.reviewList;
   },
 };
 
 const mutations = {
+  SET_OPTION_LIST(state, optionList) {
+    state.optionList = optionList;
+  },
   SET_REVIEW_LIST(state, reviewList) {
     state.reviewList = reviewList;
   },
@@ -20,6 +26,9 @@ const mutations = {
 
 const actions = {
   // async await
+  FETCH_OPTION_LIST({ commit }) {
+    commit('SET_OPTION_LIST', fetchOptionList());
+  },
   FETCH_REVIEW_LIST({ commit }) {
     commit('SET_REVIEW_LIST', fetchReviewList());
   },

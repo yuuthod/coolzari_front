@@ -74,7 +74,7 @@ export default {
     return {
       isShow: false,
       selectedIndex: 0,
-      beforIndex: 0,
+      beforeIndex: 0,
       likeNum: 0,
       refContent: null,
     };
@@ -95,22 +95,22 @@ export default {
     },
     slideUp() {
       let _height = this.refContent.clientHeight;
-      let interveal = setInterval(() => {
+      let interval = setInterval(() => {
         this.refContent.style.height = `${(_height -= 5)}px`;
         if (_height === 70) {
-          clearInterval(interveal);
+          clearInterval(interval);
         }
       }, 5);
     },
     slideDown() {
       let _height = this.refContent.clientHeight;
-      let interveal = setInterval(() => {
+      let interval = setInterval(() => {
         this.refContent.style.height = `${(_height += 5)}px`;
         if (
           _height ===
           this.refContent.scrollHeight + (this.refContent.scrollHeight % 5)
         ) {
-          clearInterval(interveal);
+          clearInterval(interval);
         }
       }, 5);
     },

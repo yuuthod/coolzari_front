@@ -1,7 +1,12 @@
-import RevieApi from '@/json/ReviewList.json';
+import OptionData from '@/json/OptionList.json';
+import ReviewData from '@/json/ReviewData.json';
 
-function fetchReviewList() {
-  return RevieApi;
+function fetchOptionList() {
+  return OptionData;
 }
 
-export { fetchReviewList };
+function fetchReviewList() {
+  return ReviewData;
+}
+
+export { fetchOptionList, fetchReviewList };

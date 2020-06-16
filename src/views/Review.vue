@@ -51,7 +51,7 @@
             <font-awesome-icon icon="search" />
           </button>
           <button
-            @click="tabClickHandler('wirte')"
+            @click="tabClickHandler('write')"
             :class="!isSearchTab ? 'active' : ''"
           >
             <font-awesome-icon icon="pen" />
@@ -82,13 +82,13 @@ export default {
     tabClickHandler(select) {
       if (select === 'search') {
         this.isSearchTab = true;
-      } else if (select === 'wirte') {
+      } else if (select === 'write') {
         this.isSearchTab = false;
       }
     },
   },
   created() {
-    this.$store.dispatch('review/FETCH_REVIEW_LIST');
+    this.$store.dispatch('review/FETCH_OPTION_LIST');
   },
 };
 </script>
