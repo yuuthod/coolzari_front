@@ -22,10 +22,10 @@
         <router-link to="/review">Review</router-link>
         <router-link to="#">FAQ</router-link>
         <router-link to="#">1:1 문의</router-link>
-        <router-link to="#">My Page</router-link>
+        <router-link to="/mypage">My Page</router-link>
         <div>
           <router-link to="#">Log out</router-link>
-          <router-link to="#">Join us</router-link>
+          <router-link to="/login">Join us</router-link>
         </div>
       </nav>
     </transition>
@@ -109,7 +109,7 @@ header > nav > a {
   padding: 20px 30px 0;
   color: #fff;
 }
-header > nav > a.router-link-exact-active {
+header > nav a.router-link-exact-active {
   font-weight: 900;
   color: #000;
 }
