@@ -37,13 +37,17 @@
     </div>
     <div class="reviewList">
       <div class="menu">
-        <select name="order" id="">
-          <option value="">추천순</option>
-          <option value="">평점순</option>
-          <option value="">좋아요순</option>
-          <option value="">최신순</option>
-        </select>
+        <div>
+          <Grade :gradeNum="4.5" />
+          <span>평균 평점 <strong>4.2 점</strong></span>
+        </div>
         <div class="tabBtns">
+          <select name="order" id="">
+            <option value="">추천순</option>
+            <option value="">평점순</option>
+            <option value="">좋아요순</option>
+            <option value="">최신순</option>
+          </select>
           <button
             @click="tabClickHandler('search')"
             :class="isSearchTab ? 'active' : ''"
@@ -67,6 +71,7 @@
 import ReviewList from '@/components/ReviewList.vue';
 import ReviewSelectBox from '@/components/ReviewSelectBox.vue';
 import ReviewWrite from '@/components/ReviewWrite.vue';
+import Grade from '@/components/commons/Grade.vue';
 export default {
   data() {
     return {
@@ -77,6 +82,7 @@ export default {
     ReviewList,
     ReviewSelectBox,
     ReviewWrite,
+    Grade,
   },
   methods: {
     tabClickHandler(select) {
@@ -107,14 +113,11 @@ div.home {
 }
 
 div.reviewList > div.menu {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
   margin-top: 20px;
-  text-align: right;
 }
-
-div.reviewList > div.menu > div {
-  display: inline-block;
-}
-
 div.selectBoxes {
   text-align: right;
   display: flex;
@@ -139,7 +142,19 @@ div.selectBoxes > span {
   padding-right: 10px;
   font-size: 0.6rem;
 }
-div.reviewList > div.menu > select {
+div.reviewList > div.menu > div:nth-of-type(1) > * {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.7rem;
+}
+div.reviewList > div.menu > div:nth-of-type(1) > span {
+  padding-left: 5px;
+  color: #c5c5c5;
+}
+div.reviewList > div.menu > div:nth-of-type(1) > span > strong {
+  color: #adadad;
+}
+div.reviewList > div.menu > div.tabBtns > select {
   height: 17px;
   padding-right: 1.2rem;
   padding-left: 0.4rem;

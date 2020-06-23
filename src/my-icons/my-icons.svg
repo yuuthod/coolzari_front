@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?> 
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <font id="my-icons" horiz-adv-x="512">
+    <font-face font-family="my-icons"
+      units-per-em="384" ascent="384"
+      descent="0" />
+    <missing-glyph horiz-adv-x="0" />
+    <glyph glyph-name="siren"
+      unicode="&#xF101;"
+      horiz-adv-x="512" d=" M448 85.3C448 108.9 428.9 128 405.3 128V234.6C405.3 317.1 338.5 384 256 384S106.7 317.1 106.7 234.6V128C83.1 128 64 108.9 64 85.3V42.6H42.7V0H469.4V42.7H448V85.3zM149.3 234.6C149.3 293.5 197.1 341.3 256 341.3S362.7 293.5 362.7 234.6V128H149.3V234.6zM405.3 42.6H106.7V85.3H405.4L405.3 42.6L405.3 42.6z M277.4 277.3C277.4 265.5363348286041 286.9363348286041 256 298.7 256C310.4636651713959 256 320 265.5363348286041 320 277.3C320 289.0636651713959 310.4636651713959 298.6 298.7 298.6C286.9363348286041 298.6 277.4 289.0636651713959 277.4 277.3z" />
+  </font>
+</defs>
+</svg>

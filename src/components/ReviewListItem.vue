@@ -50,7 +50,7 @@
       <ul>
         <li>{{ review.userId }}</li>
         <li>{{ review.date }}</li>
-        <li v-if="isShow">리뷰신고</li>
+        <li v-if="isShow">리뷰신고 <i class="my-icon my-icon-siren"></i></li>
       </ul>
       <button @click="detailShowClick()">
         <span v-if="isShow">접기 <font-awesome-icon icon="caret-up"/></span>
@@ -65,6 +65,7 @@
 </template>
 
 <script scoped>
+import '../my-icons/my-icons.css';
 import Grade from '../components/commons/Grade.vue';
 export default {
   props: {
@@ -181,9 +182,16 @@ li.item > div:nth-of-type(1) > dl:nth-of-type(1) dd {
 li.item > div:nth-of-type(1) > dl:nth-of-type(1) dt:hover + dd {
   visibility: visible;
 }
+li.item > div:nth-of-type(1) > ul {
+  position: absolute;
+  bottom: 0;
+}
 li.item > div:nth-of-type(1) > ul > li {
   display: inline-block;
   color: #aaa;
+}
+li.item > div:nth-of-type(1) ul li:nth-of-type(3) {
+  color: #272727;
 }
 li.item > div:nth-of-type(1) ul li:not(:last-child)::after {
   content: '';
@@ -192,10 +200,6 @@ li.item > div:nth-of-type(1) ul li:not(:last-child)::after {
   height: 10px;
   margin-right: 5px;
   border-right: 1px solid #aaa;
-}
-li.item > div:nth-of-type(1) > ul {
-  position: absolute;
-  bottom: 0;
 }
 li.item > div:nth-of-type(1) > button {
   position: absolute;

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>my-icons</title>
+	<style>
+		body {
+			font-family: sans-serif;
+			margin: 0;
+			padding: 10px 20px;
+		}
+
+		.preview {
+			line-height: 2em;
+		}
+
+		.preview__icon {
+			display: inline-block;
+			width: 32px;
+			text-align: center;
+		}
+
+		.icon {
+			display: inline-block;
+			font-size: 16px;
+		}
+
+		@font-face {
+	font-family: "my-icons";
+	src: url("my-icons.eot?d70b1b304ca8fd6670479d35ad1e6adc?#iefix") format("embedded-opentype"),
+url("my-icons.woff2?d70b1b304ca8fd6670479d35ad1e6adc") format("woff2"),
+url("my-icons.woff?d70b1b304ca8fd6670479d35ad1e6adc") format("woff");
+}
+
+.my-icon {
+	line-height: 1;
+}
+
+.my-icon:before {
+	font-family: my-icons !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.my-icon-siren:before {
+	content: "\f101";
+}
+
+	</style>
+</head>
+<body>
+	<h1>my-icons</h1>
+	<div class="preview">
+		<span class="preview__icon">
+			<span class=" my-icon-siren"></span>
+		</span>
+		<span>siren</span>
+	</div>
+</body>
+</html>
