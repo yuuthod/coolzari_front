@@ -1,0 +1,21 @@
+@font-face {
+	font-family: "my-icons";
+	src: url("my-icons.eot?75ae4bc832f94f8d28d6f5179dae8582?#iefix") format("embedded-opentype"),
+url("my-icons.woff2?75ae4bc832f94f8d28d6f5179dae8582") format("woff2"),
+url("my-icons.woff?75ae4bc832f94f8d28d6f5179dae8582") format("woff");
+}
+
+.my-icon {
+	line-height: 1;
+}
+
+.my-icon:before {
+	font-family: my-icons !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.my-icon-siren:before {
+	content: "\f101";
+}

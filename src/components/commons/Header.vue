@@ -20,6 +20,13 @@
       <nav ref="menu" v-if="isShow">
         <router-link to="/">Home</router-link>
         <router-link to="/review">Review</router-link>
+        <router-link to="#">FAQ</router-link>
+        <router-link to="#">1:1 문의</router-link>
+        <router-link to="#">My Page</router-link>
+        <div>
+          <router-link to="#">Log out</router-link>
+          <router-link to="#">Join us</router-link>
+        </div>
       </nav>
     </transition>
   </header>
@@ -86,18 +93,19 @@ div.hamburger.is-active .line:nth-child(3) {
 }
 header > nav {
   position: absolute;
-  min-width: 50%;
-  min-height: calc(100% - 40px);
+  min-width: 100%;
   top: 40px;
   right: 0;
   padding-top: 10px;
+  padding-bottom: 20px;
   background: #ffca0d;
+  opacity: 0.9;
   z-index: 1;
 }
 header > nav > a {
   display: block;
-  font-size: 1.1rem;
-  text-align: right;
+  font-size: 1.4rem;
+  text-align: center;
   padding: 20px 30px 0;
   color: #fff;
 }
@@ -105,6 +113,25 @@ header > nav > a.router-link-exact-active {
   font-weight: 900;
   color: #000;
 }
+header > nav > div {
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 20px 30px 0;
+  margin-top: 20px;
+  border-top: 1px solid #ffd952;
+}
+header > nav > div > a {
+  color: #fff;
+}
+header > nav > div > a:first-of-type {
+  padding-right: 10px;
+}
+header > nav > div > a:first-of-type::after {
+  content: '';
+  padding-right: 12px;
+  border-right: 2px solid #fff;
+}
+
 .slide-fade-enter-active {
   transition: all 0.3s ease;
 }
