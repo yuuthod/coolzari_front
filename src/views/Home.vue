@@ -3,7 +3,9 @@
     <h2>주간 인기 자리</h2>
     <home-review-box></home-review-box>
     <div>
-      <button><span>리뷰 보기</span></button>
+      <button>
+        <span><router-link to="/review">리뷰 보기</router-link></span>
+      </button>
       <button><span>리뷰 쓰기</span></button>
     </div>
   </div>

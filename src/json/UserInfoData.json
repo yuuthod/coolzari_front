@@ -1,0 +1,18 @@
+[
+  {
+    "userID": "user1@gmail.com",
+    "userNick": "nick1",
+    "userName": "김철수",
+    "userAuth": "auth",
+    "userPlatform": "naver",
+    "userCreated": "2020-05-26",
+    "userStatus": "active",
+    "userRegion": 50,
+    "userHeight": 180,
+    "userSight": "r",
+    "userPreferHorizon": "forward",
+    "userPreferVertical": "right",
+    "userReportCnt": 0,
+    "userPrivilege": "user"
+  }
+]

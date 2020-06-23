@@ -1,9 +1,11 @@
 import { fetchReviewList } from '@/api/index.js';
 import { fetchOptionList } from '@/api/index.js';
+import { fetchUserList } from '@/api/index.js';
 
 const state = {
   optionList: [],
   reviewList: [],
+  userList: [],
 };
 
 const getters = {
@@ -12,6 +14,9 @@ const getters = {
   },
   getReviewList(state) {
     return state.reviewList;
+  },
+  getUserList(state) {
+    return state.userList;
   },
 };
 
@@ -22,6 +27,9 @@ const mutations = {
   SET_REVIEW_LIST(state, reviewList) {
     state.reviewList = reviewList;
   },
+  SET_USER_LIST(state, userList) {
+    state.userList = userList;
+  },
 };
 
 const actions = {
@@ -31,6 +39,9 @@ const actions = {
   },
   FETCH_REVIEW_LIST({ commit }) {
     commit('SET_REVIEW_LIST', fetchReviewList());
+  },
+  FETCH_USER_LIST({ commit }) {
+    commit('SET_USER_LIST', fetchUserList());
   },
 };
 

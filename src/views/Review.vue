@@ -89,6 +89,7 @@ export default {
   },
   created() {
     this.$store.dispatch('review/FETCH_OPTION_LIST');
+    this.$store.dispatch('review/FETCH_USER_LIST');
   },
 };
 </script>
