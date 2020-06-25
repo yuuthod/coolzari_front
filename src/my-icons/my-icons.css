@@ -1,8 +1,8 @@
 @font-face {
 	font-family: "my-icons";
-	src: url("my-icons.eot?75ae4bc832f94f8d28d6f5179dae8582?#iefix") format("embedded-opentype"),
-url("my-icons.woff2?75ae4bc832f94f8d28d6f5179dae8582") format("woff2"),
-url("my-icons.woff?75ae4bc832f94f8d28d6f5179dae8582") format("woff");
+	src: url("my-icons.eot?318a43d1081ca2fb9f8968b5f80a016e?#iefix") format("embedded-opentype"),
+url("my-icons.woff2?318a43d1081ca2fb9f8968b5f80a016e") format("woff2"),
+url("my-icons.woff?318a43d1081ca2fb9f8968b5f80a016e") format("woff");
 }
 
 .my-icon {
@@ -16,6 +16,27 @@ url("my-icons.woff?75ae4bc832f94f8d28d6f5179dae8582") format("woff");
 	vertical-align: top;
 }
 
-.my-icon-siren:before {
+.my-icon-btn_back:before {
 	content: "\f101";
+}
+.my-icon-down_arrow:before {
+	content: "\f102";
+}
+.my-icon-hexagon_fill:before {
+	content: "\f103";
+}
+.my-icon-hexagon_half:before {
+	content: "\f104";
+}
+.my-icon-hexagon_line:before {
+	content: "\f105";
+}
+.my-icon-pen:before {
+	content: "\f106";
+}
+.my-icon-search:before {
+	content: "\f107";
+}
+.my-icon-siren:before {
+	content: "\f108";
 }

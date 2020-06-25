@@ -2,7 +2,12 @@ const webfontsGenerator = require('webfonts-generator');
 webfontsGenerator(
   {
     // 폰트화 하고자하는 벡터 이미지들 경로 목록
-    files: ['src/assets/images/icon/siren.svg'],
+    files: [
+      'src/assets/images/icon/hexagon_fill.svg',
+      'src/assets/images/icon/hexagon_half.svg',
+      'src/assets/images/icon/hexagon_line.svg',
+      'src/assets/images/icon/siren.svg',
+    ],
     dest: 'src/my-icons/', // 아이콘 폰트 리소스들(my-icons.css, my-icons.eot, my-icons.ttf, ...)이 자동생성될 폴더경로
     fontName: 'my-icons', // 이 이름으로 폰트 리소스들 생성
     html: true, // true이면 html 미리보기(my-icons.html)를 생성
