@@ -2,7 +2,7 @@
   <div class="container">
     <h1>마이 페이지</h1>
     <ul>
-      <li>내 정보 관리</li>
+      <li><router-link to="/mypage/myinfo">내 정보 관리</router-link></li>
       <li>내 리뷰 관리</li>
       <li>문의 내역</li>
     </ul>

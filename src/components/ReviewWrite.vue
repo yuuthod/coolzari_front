@@ -2,7 +2,16 @@
   <div>
     <ul v-for="(obj, key) in userList" :key="key">
       <li class="item">
-
+        <div ref="nickName">
+          <dl>
+            <dt>{{ obj.userID }}</dt>
+          </dl>
+        </div>
+        <div ref="otherData">
+          <dl>
+            <dt>{{ obj.userNick }}</dt>
+          </dl>
+        </div>
       </li>
     </ul>
   </div>
@@ -12,12 +21,12 @@
 import { mapGetters } from 'vuex';
 export default {
   computed: {
-    ...mapGetters('review', {
+    ...mapGetters('user', {
       userList: 'getUserList',
     }),
   },
   created() {
-    this.$store.dispatch('review/FETCH_USER_LIST');
+    this.$store.dispatch('user/FETCH_USER_LIST');
   },
 };
 </script>
