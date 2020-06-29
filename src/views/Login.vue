@@ -19,7 +19,6 @@ div.container {
 }
 div.container > h1 {
   font-size: 2.8rem;
-  font-weight: 900;
 }
 div.container > ul {
   margin-top: 50px;

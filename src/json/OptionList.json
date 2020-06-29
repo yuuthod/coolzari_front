@@ -8,9 +8,42 @@
           "userRegion": "오른쪽",
           "userPreferseatA": "좌",
           "userPreferseatB": "상",
-          "keywordSeat": ["푹신푹신해요","또대체","냄새남"],
-          "keywordEyesight": ["조금 더", "그럴듯한", "내용필요"],
-          "keywordEffect": ["향기굿", "구림"],
+          "keywordSeat": [
+            {
+              "keyword":"푹신푹신해요",
+              "isGood":true
+            },{
+              "keyword": "흠흠",
+              "isGood": false
+            },{
+              "keyword": "냄새나요",
+              "isGood": false
+            }
+          ],
+          "keywordEyesight": [
+            {
+              "keyword": "잘 안보여요",
+              "isGood": false
+            },
+            {
+              "keyword": "흠흠",
+              "isGood": false
+            },
+            {
+              "keyword": "뭐라해",
+              "isGood": true
+            }
+          ],
+          "keywordEffect": [
+            {
+              "keyword": "푹신푹신해요",
+              "isGood": true
+            },
+            {
+              "keyword": "하하",
+              "isGood": true
+            }
+          ],
           "comment":
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ad voluptate distinctio voluptas. Molestiae doloribus esse nobis facilis. Quis repellendus provident commodi, aut quo saepe quae odit suscipit accusamus, ducimus et. Harum voluptate sequi rerum quibusdam facere, placeat impedit ducimus dolorem quo laboriosam nihil possimus qui assumenda quam iusto exercitationem rem ab molestiae deserunt illum. Non temporibus est, aliquam nemo error corporis hic dolorum ab possimus, illum voluptate tempore nihil quis quibusdam veniam cumque! Ducimus ipsa iure ullam consectetur fugit aperiam illo sunt sequi consequatur dicta fuga incidunt, rem quod nostrum animi suscipit illum dolores minus molestias non velit dolorum!",
           "date": "2020.04.25"
@@ -25,16 +58,46 @@
           "userPreferseatA": "좌",
           "userPreferseatB": "중상",
           "keywordSeat": [
-            "푹신푹신해요"
+            {
+              "keyword": "푹신푹신해요",
+              "isGood": true
+            },
+            {
+              "keyword": "흠흠",
+              "isGood": false
+            },
+            {
+              "keyword": "좋은편",
+              "isGood": true
+            }
           ],
           "keywordEyesight": [
-            "조금 더",
-            "그럴듯한",
-            "내용필요"
+            {
+              "keyword": "푹신푹신해요",
+              "isGood": true
+            },
+            {
+              "keyword": "흠흠",
+              "isGood": false
+            },
+            {
+              "keyword": "좋은편",
+              "isGood": true
+            }
           ],
           "keywordEffect": [
-            "향기굿",
-            "구림"
+            {
+              "keyword": "푹신푹신해요",
+              "isGood": true
+            },
+            {
+              "keyword": "흠흠",
+              "isGood": false
+            },
+            {
+              "keyword": "좋은편",
+              "isGood": true
+            }
           ],
           "comment":
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam est quibusdam voluptatem. Natus, assumenda debitis perspiciatis vero nostrum voluptatum accusantium.",
@@ -50,16 +113,46 @@
           "userPreferseatA": "우",
           "userPreferseatB": "하",
           "keywordSeat": [
-            "푹신푹신해요"
+            {
+              "keyword": "푹신푹신해요",
+              "isGood": true
+            },
+            {
+              "keyword": "흠흠",
+              "isGood": false
+            },
+            {
+              "keyword": "좋은편",
+              "isGood": true
+            }
           ],
           "keywordEyesight": [
-            "조금 더",
-            "그럴듯한",
-            "내용필요"
+            {
+              "keyword": "푹신푹신해요",
+              "isGood": true
+            },
+            {
+              "keyword": "흠흠",
+              "isGood": false
+            },
+            {
+              "keyword": "좋은편",
+              "isGood": true
+            }
           ],
           "keywordEffect": [
-            "향기굿",
-            "구림"
+            {
+              "keyword": "푹신푹신해요",
+              "isGood": true
+            },
+            {
+              "keyword": "흠흠",
+              "isGood": false
+            },
+            {
+              "keyword": "좋은편",
+              "isGood": true
+            }
           ],
           "comment":
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sapiente deleniti expedita iure assumenda, nam dolorem sunt provident quo unde, officiis et, magni ex fuga voluptas velit ipsum dicta quia.",
@@ -75,16 +168,46 @@
           "userPreferseatA": "좌",
           "userPreferseatB": "중상",
           "keywordSeat": [
-            "푹신푹신해요"
+            {
+              "keyword": "푹신푹신해요",
+              "isGood": true
+            },
+            {
+              "keyword": "흠흠",
+              "isGood": false
+            },
+            {
+              "keyword": "좋은편",
+              "isGood": true
+            }
           ],
           "keywordEyesight": [
-            "조금 더",
-            "그럴듯한",
-            "내용필요"
+            {
+              "keyword": "푹신푹신해요",
+              "isGood": true
+            },
+            {
+              "keyword": "흠흠",
+              "isGood": false
+            },
+            {
+              "keyword": "좋은편",
+              "isGood": true
+            }
           ],
           "keywordEffect": [
-            "향기굿",
-            "구림"
+            {
+              "keyword": "푹신푹신해요",
+              "isGood": true
+            },
+            {
+              "keyword": "흠흠",
+              "isGood": false
+            },
+            {
+              "keyword": "좋은편",
+              "isGood": true
+            }
           ],
           "comment":
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam at cum, corrupti molestias iusto excepturi pariatur odit necessitatibus repudiandae similique perspiciatis ullam sapiente, nulla quibusdam non nisi quis eveniet aliquam sequi! Cumque, quidem voluptatem? Enim at esse eius commodi ea quisquam fuga vitae, ipsa neque ad laboriosam saepe, atque deserunt quia quo consequuntur quos non quidem totam laudantium repellat sint reiciendis ipsum numquam! Sed quaerat modi mollitia minima quisquam. Tenetur?",

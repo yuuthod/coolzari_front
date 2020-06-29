@@ -11,12 +11,9 @@ function fetchReviewList() {
   return ReviewData;
 }
 
-function fetchUserList() {
-  return UserData;
+// 리뷰 평균 평점
+function fetchAverageRating() {
+  return 4.5;
 }
 
-function fetchAreaList() {
-  return AreaData;
-}
-
-export { fetchOptionList, fetchReviewList, fetchUserList, fetchAreaList };
+export { fetchOptionList, fetchReviewList, fetchAverageRating };

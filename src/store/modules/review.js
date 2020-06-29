@@ -1,9 +1,13 @@
-import { fetchReviewList } from '@/api/index.js';
-import { fetchOptionList } from '@/api/index.js';
+import {
+  fetchReviewList,
+  fetchOptionList,
+  fetchAverageRating,
+} from '@/api/index.js';
 
 const state = {
   optionList: [],
   reviewList: [],
+  averageRating: 0,
 };
 
 const getters = {
@@ -12,6 +16,9 @@ const getters = {
   },
   getReviewList(state) {
     return state.reviewList;
+  },
+  getAverageRating(state) {
+    return state.averageRating;
   },
 };
 
@@ -22,6 +29,9 @@ const mutations = {
   SET_REVIEW_LIST(state, reviewList) {
     state.reviewList = reviewList;
   },
+  SET__AVERAGE_RATING(state, averageRating) {
+    state.averageRating = averageRating;
+  },
 };
 
 const actions = {
@@ -31,6 +41,9 @@ const actions = {
   },
   FETCH_REVIEW_LIST({ commit }) {
     commit('SET_REVIEW_LIST', fetchReviewList());
+  },
+  FETCH_AVERAGE_RATING({ commit }) {
+    commit('SET__AVERAGE_RATING', fetchAverageRating());
   },
 };
 
