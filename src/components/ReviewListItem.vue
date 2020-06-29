@@ -30,21 +30,30 @@
       <dl>
         <dt>좌석</dt>
         <dd>
-          <span v-for="(value, key) in review.keywordSeat" :key="key">{{
-            value
-          }}</span>
+          <span
+            v-for="(obj, key) in review.keywordSeat"
+            :key="key"
+            :class="obj.isGood ? 'yellow' : 'gray'"
+            >{{ obj.keyword }}</span
+          >
         </dd>
         <dt>시야</dt>
         <dd>
-          <span v-for="(value, key) in review.keywordEyesight" :key="key">{{
-            value
-          }}</span>
+          <span
+            v-for="(obj, key) in review.keywordEyesight"
+            :key="key"
+            :class="obj.isGood ? 'yellow' : 'gray'"
+            >{{ obj.keyword }}</span
+          >
         </dd>
         <dt>효과</dt>
         <dd>
-          <span v-for="(value, key) in review.keywordEffect" :key="key">{{
-            value
-          }}</span>
+          <span
+            v-for="(obj, key) in review.keywordEffect"
+            :key="key"
+            :class="obj.isGood ? 'yellow' : 'gray'"
+            >{{ obj.keyword }}</span
+          >
         </dd>
       </dl>
       <ul>
@@ -269,11 +278,12 @@ li.item > div:nth-of-type(1) dl:nth-of-type(2) > dd > span {
   text-align: center;
   font-size: 0.8rem;
   border-radius: 2px;
+}
+li.item > div:nth-of-type(1) dl:nth-of-type(2) > dd > span.yellow {
   background-color: #ffc800;
 }
-li.item > div:nth-of-type(1) dl:nth-of-type(2) > dd:nth-last-of-type(2) > span {
-  background-color: #aaa;
-  color: #fff;
+li.item > div:nth-of-type(1) dl:nth-of-type(2) > dd > span.gray {
+  background-color: #aaaaaa;
 }
 li.item > div:nth-of-type(1) dl:nth-of-type(2) > * {
   margin-top: 10px;
