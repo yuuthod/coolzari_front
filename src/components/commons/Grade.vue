@@ -4,7 +4,7 @@
       v-for="(value, key) in gradeList()"
       :key="key"
       class="hexagon"
-      :class="value ? 'fill' : 'line'"
+      :class="value"
     ></div>
   </div>
 </template>
@@ -19,9 +19,13 @@ export default {
       let list = [];
       for (let i = 0; i < 5; i++) {
         if (i < this.gradeNum) {
-          list.push(true);
+          if (this.gradeNum - i < 1) {
+            list.push('half');
+          } else {
+            list.push('fill');
+          }
         } else {
-          list.push(false);
+          list.push('line');
         }
       }
       return list;
@@ -43,5 +47,8 @@ div.hexagon.fill {
 }
 div.hexagon.line {
   background-image: url('../../assets/images/icon/hexagon_line.svg');
+}
+div.hexagon.half {
+  background-image: url('../../assets/images/icon/hexagon_half.svg');
 }
 </style>

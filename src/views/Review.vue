@@ -38,8 +38,10 @@
     <div class="reviewList">
       <div class="menu">
         <div>
-          <Grade :gradeNum="4.5" />
-          <span>평균 평점 <strong>4.2 점</strong></span>
+          <Grade :gradeNum="averageRating" />
+          <span
+            >평균 평점 <strong>{{ averageRating }} 점</strong></span
+          >
         </div>
         <div class="tabBtns">
           <select name="order" id="">
@@ -68,6 +70,7 @@
   </div>
 </template>
 <script>
+import { mapGetters } from 'vuex';
 import ReviewList from '@/components/ReviewList.vue';
 import ReviewSelectBox from '@/components/ReviewSelectBox.vue';
 import ReviewWrite from '@/components/ReviewWrite.vue';
@@ -84,6 +87,11 @@ export default {
     ReviewWrite,
     Grade,
   },
+  computed: {
+    ...mapGetters('review', {
+      averageRating: 'getAverageRating',
+    }),
+  },
   methods: {
     tabClickHandler(select) {
       if (select === 'search') {
@@ -95,6 +103,7 @@ export default {
   },
   created() {
     this.$store.dispatch('review/FETCH_OPTION_LIST');
+    this.$store.dispatch('review/FETCH_AVERAGE_RATING');
   },
 };
 </script>
