@@ -70,7 +70,9 @@ button {
 	background: transparent;
 	cursor: pointer;
 }
-
+input {
+	box-sizing: border-box;
+}
 /* my style */
 div.container {
 	padding: 40px 20px 0px 20px;
