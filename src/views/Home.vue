@@ -6,10 +6,6 @@
       <button>
         <span><router-link to="/review">리뷰 보기</router-link></span>
       </button>
-      <button><span>리뷰 쓰기</span></button>
-      <button>
-        <span>리뷰 보기</span>
-      </button>
       <button>
         <span>리뷰 쓰기</span>
       </button>

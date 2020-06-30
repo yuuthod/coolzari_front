@@ -1,0 +1,262 @@
+[
+  {
+    "reviewNo": "001",
+    "userId": "user01",
+    "userHeight": 160,
+    "userRegion": 50,
+    "screenCd": "CGV",
+    "movie": "알라딘(2019)",
+    "movieImg": "aladin.jpg",
+    "reviewSeat": "F4",
+    "reviewCreated": "2019.05.23",
+    "reviewStatus": "show",
+    "keywordSeat": [
+      {
+        "keyword":"푹신푹신해요",
+        "isGood":true
+      },{
+        "keyword": "흠흠",
+        "isGood": false
+      },{
+        "keyword": "냄새나요",
+        "isGood": false
+      }
+    ],
+    "keywordEyesight": [
+      {
+        "keyword": "잘 안보여요",
+        "isGood": false
+      },
+      {
+        "keyword": "흠흠",
+        "isGood": false
+      },
+      {
+        "keyword": "뭐라해",
+        "isGood": true
+      }
+    ],
+    "keywordEffect": [
+      {
+        "keyword": "푹신푹신해요",
+        "isGood": true
+      },
+      {
+        "keyword": "하하",
+        "isGood": true
+      }
+    ],
+    "reviewComment":
+    "꿀잼... 알라딘 실사 영화 장난 아니네 유치해도 아름답다 영화관에서 봤는데 노래 부르면서 퍼포먼스 할 때마다 눈을 뗄수가 없이 몰입했음 뭔가 차오르고 두근거렸음 막막하고 스트레스 받고 험난한 현실에도 동심은 있구나, 그래도 순수하고 어린 아이같은 설레는 마음이 있구나 라는 걸 알 게 해주어 고마운 영화였음",
+    "reviewScore": 4,
+    "reviewLike": 4
+  },
+  {
+    "reviewNo": "002",
+    "userId": "user01",
+    "userHeight": 160,
+    "userRegion": 30,
+    "screenCd": "MEGABOX",
+    "movie": "다크페이트",
+    "movieImg": "darkfate.jpg",
+    "reviewSeat": "F4",
+    "reviewCreated": "2019.10.27",
+    "reviewStatus": "show",
+    "keywordSeat": [
+      {
+        "keyword":"푹신푹신해요",
+        "isGood":true
+      },{
+        "keyword": "흠흠",
+        "isGood": false
+      },{
+        "keyword": "냄새나요",
+        "isGood": false
+      }
+    ],
+    "keywordEyesight": [
+      {
+        "keyword": "잘 안보여요",
+        "isGood": false
+      },
+      {
+        "keyword": "흠흠",
+        "isGood": false
+      },
+      {
+        "keyword": "뭐라해",
+        "isGood": true
+      }
+    ],
+    "keywordEffect": [
+      {
+        "keyword": "푹신푹신해요",
+        "isGood": true
+      },
+      {
+        "keyword": "하하",
+        "isGood": true
+      }
+    ],
+    "reviewComment":
+    "구관이 명관!! 이건 무조건 10점이다\n개인적으로 기술의 발전으로인해 cg로 과거보단 많이 화려해졌지만\n2를 넘긴 부족합니다\n그래도 2시간동안 전혀 지루할틈이 없었고 정말 오랫만에 제대로 된 작품을 봤네요\n제임스카메론이 다시 메가폰을 잡은 터미네이터 역시 다릅니다\n너무 재밌었어요 2시간이란 시간이 짧게 느껴졌다는것은 그만큼 시간가는줄 모르게 재밌었다는\n거겠죠\n가능할지는 모르겠지만 다음편도 나왔으면 좋겠습니다\n맥켄지와 아놀드 린다 세명의 콤비액션이 너무 화려했습니다\n오히려 상대 터미네이터가 불쌍해질정도로요",
+    "reviewScore": 5,
+    "reviewLike": 5
+  },
+  {
+    "reviewNo": "003",
+    "userId": "user01",
+    "userHeight": 160,
+    "userRegion": 70,
+    "screenCd": "Lotte Cinema",
+    "movie": "겨울왕국2",
+    "movieImg": "frozen2.jpg",
+    "reviewSeat": "F4",
+    "reviewCreated": "2019.12.02",
+    "reviewStatus": "show",
+    "keywordSeat": [
+      {
+        "keyword":"푹신푹신해요",
+        "isGood":true
+      },{
+        "keyword": "흠흠",
+        "isGood": false
+      },{
+        "keyword": "냄새나요",
+        "isGood": false
+      }
+    ],
+    "keywordEyesight": [
+      {
+        "keyword": "잘 안보여요",
+        "isGood": false
+      },
+      {
+        "keyword": "흠흠",
+        "isGood": false
+      },
+      {
+        "keyword": "뭐라해",
+        "isGood": true
+      }
+    ],
+    "keywordEffect": [
+      {
+        "keyword": "푹신푹신해요",
+        "isGood": true
+      },
+      {
+        "keyword": "하하",
+        "isGood": true
+      }
+    ],
+    "reviewComment":
+    "그냥 재밌게 봤어요. 12월 2일 정도에 봤어요. 3번 봤어요. 재밌었어요. 10점 드릴게요. 그런데 크리스토프 차인 느낌 나서 생각에 '안나 인성 보소....'라고 생각했어요. 그래도 재밌었어요. 걍 재밌었어요. 디즈니 영화 이제 뭐 안 만드시나요? 그냥 빨리 만드세요. 그리고 5년이 아니라 6년입니다. 그리고 2018년 아니면 2017년쯤에 만들기 시작한 것 같네요. (초딩입니다.)",
+    "reviewScore": 4,
+    "reviewLike": 4
+  },
+  {
+    "reviewNo": "004",
+    "userId": "user01",
+    "userHeight": 160,
+    "userRegion": 50,
+    "screenCd": "CGV",
+    "movie": "알라딘(2019)",
+    "movieImg": "aladin.jpg",
+    "reviewSeat": "F4",
+    "reviewCreated": "2019.05.23",
+    "reviewStatus": "show",
+    "keywordSeat": [
+      {
+        "keyword":"푹신푹신해요",
+        "isGood":true
+      },{
+        "keyword": "흠흠",
+        "isGood": false
+      },{
+        "keyword": "냄새나요",
+        "isGood": false
+      }
+    ],
+    "keywordEyesight": [
+      {
+        "keyword": "잘 안보여요",
+        "isGood": false
+      },
+      {
+        "keyword": "흠흠",
+        "isGood": false
+      },
+      {
+        "keyword": "뭐라해",
+        "isGood": true
+      }
+    ],
+    "keywordEffect": [
+      {
+        "keyword": "푹신푹신해요",
+        "isGood": true
+      },
+      {
+        "keyword": "하하",
+        "isGood": true
+      }
+    ],
+    "reviewComment":
+    "꿀잼... 알라딘 실사 영화 장난 아니네 유치해도 아름답다 영화관에서 봤는데 노래 부르면서 퍼포먼스 할 때마다 눈을 뗄수가 없이 몰입했음 뭔가 차오르고 두근거렸음 막막하고 스트레스 받고 험난한 현실에도 동심은 있구나, 그래도 순수하고 어린 아이같은 설레는 마음이 있구나 라는 걸 알 게 해주어 고마운 영화였음",
+    "reviewScore": 3,
+    "reviewLike": 3
+  },
+  {
+    "reviewNo": "005",
+    "userId": "user01",
+    "userHeight": 160,
+    "userRegion": 50,
+    "screenCd": "CGV",
+    "movie": "알라딘(2019)",
+    "movieImg": "aladin.jpg",
+    "reviewSeat": "F4",
+    "reviewCreated": "2019.05.23",
+    "reviewStatus": "show",
+    "keywordSeat": [
+      {
+        "keyword":"푹신푹신해요",
+        "isGood":true
+      },{
+        "keyword": "흠흠",
+        "isGood": false
+      },{
+        "keyword": "냄새나요",
+        "isGood": false
+      }
+    ],
+    "keywordEyesight": [
+      {
+        "keyword": "잘 안보여요",
+        "isGood": false
+      },
+      {
+        "keyword": "흠흠",
+        "isGood": false
+      },
+      {
+        "keyword": "뭐라해",
+        "isGood": true
+      }
+    ],
+    "keywordEffect": [
+      {
+        "keyword": "푹신푹신해요",
+        "isGood": true
+      },
+      {
+        "keyword": "하하",
+        "isGood": true
+      }
+    ],
+    "reviewComment":
+    "꿀잼... 알라딘 실사 영화 장난 아니네 유치해도 아름답다 영화관에서 봤는데 노래 부르면서 퍼포먼스 할 때마다 눈을 뗄수가 없이 몰입했음 뭔가 차오르고 두근거렸음 막막하고 스트레스 받고 험난한 현실에도 동심은 있구나, 그래도 순수하고 어린 아이같은 설레는 마음이 있구나 라는 걸 알 게 해주어 고마운 영화였음",
+    "reviewScore": 2,
+    "reviewLike": 2
+  }
+]

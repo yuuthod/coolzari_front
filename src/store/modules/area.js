@@ -5,7 +5,7 @@ const state = {
 };
 
 const getters = {
-  fetchAreaList(state) {
+  getAreaList(state) {
     return state.areaList;
   },
 };

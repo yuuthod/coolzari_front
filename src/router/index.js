@@ -33,6 +33,14 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: 'myinfo' */ '../components/MyPageEdit.vue'),
   },
+  {
+    path: '/mypage/myreview',
+    name: 'myreview',
+    component: () =>
+      import(
+        /* webpackChunkName: 'myreview' */ '../components/MyReviewList.vue'
+      ),
+  },
 ];
 
 const router = new VueRouter({
